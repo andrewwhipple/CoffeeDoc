@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--FirstVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeDoc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="FirstVC" id="BYZ-38-t0r" customClass="ViewController" customModule="CoffeeDoc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,10 +16,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-YJ-jPU">
-                                <rect key="frame" x="253" y="348" width="94" height="30"/>
-                                <state key="normal" title="Start Brewing"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-YJ-jPU">
+                                <rect key="frame" x="270" y="348" width="62" height="30"/>
+                                <state key="normal" title="Continue"/>
                                 <connections>
+                                    <action selector="StartBrewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itG-u7-y00"/>
                                     <segue destination="6Nh-UJ-G2F" kind="show" id="KoF-Tj-eVB"/>
                                 </connections>
                             </button>
@@ -29,12 +30,52 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1) Measure out 20g of coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yt-ek-hUN">
+                                <rect key="frame" x="190" y="170" width="221" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2) Grind the coffee to medium-fine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOF-KW-vnW">
+                                <rect key="frame" x="167" y="199" width="266" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4) Bring 320g of water to a boil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPz-yz-aMa">
+                                <rect key="frame" x="181" y="257" width="238" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3) Place the filter in the v60, then pour the ground coffee in the cone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-Li-rbv">
+                                <rect key="frame" x="38" y="228" width="524" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5) Let the water cool off for 45-60 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISG-Ka-tq7">
+                                <rect key="frame" x="135" y="286" width="331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5ey-qs-YKM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="1cm-O6-1Jx"/>
+                            <constraint firstItem="xrM-Li-rbv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="208" id="6jF-P7-agG"/>
+                            <constraint firstItem="PPz-yz-aMa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="237" id="A6I-KR-bVn"/>
                             <constraint firstItem="Mm7-YJ-jPU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LkX-Wl-v9N"/>
+                            <constraint firstItem="KOF-KW-vnW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="179" id="QGx-YZ-iNC"/>
+                            <constraint firstItem="ISG-Ka-tq7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="266" id="T13-kt-mMg"/>
+                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T2I-h2-Asu"/>
+                            <constraint firstItem="xrM-Li-rbv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uuf-wx-Jhi"/>
+                            <constraint firstItem="ISG-Ka-tq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aLx-4v-i3B"/>
+                            <constraint firstItem="PPz-yz-aMa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bOt-wZ-DXy"/>
+                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="g3m-Bm-PWj"/>
                             <constraint firstItem="Mm7-YJ-jPU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="328" id="jrM-Xh-TuA"/>
+                            <constraint firstItem="KOF-KW-vnW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lPR-Qv-lj8"/>
                             <constraint firstItem="5ey-qs-YKM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xDG-jr-S3a"/>
                         </constraints>
                     </view>
@@ -43,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="305" y="140"/>
         </scene>
-        <!--View Controller-->
+        <!--SecondVC-->
         <scene sceneID="c1y-Ri-JD0">
             <objects>
-                <viewController id="6Nh-UJ-G2F" sceneMemberID="viewController">
+                <viewController title="SecondVC" id="6Nh-UJ-G2F" customClass="SecondVC" customModule="CoffeeDoc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="h5l-a2-O9n"/>
                         <viewControllerLayoutGuide type="bottom" id="ppG-um-gHP"/>
@@ -55,53 +96,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slowly pour just enough water to submerge the grounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xob-vD-fqg">
+                                <rect key="frame" x="88" y="88" width="428" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xs6-RB-ze0">
                                 <rect key="frame" x="225" y="257" width="150" height="2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="eey-Fo-YrW"/>
                                 </constraints>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruction 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xob-vD-fqg">
-                                <rect key="frame" x="253" y="88" width="94" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruction 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52g-3K-tKE">
-                                <rect key="frame" x="252" y="147" width="96" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kow-Ad-25t">
-                                <rect key="frame" x="193" y="351" width="48" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kow-Ad-25t">
+                                <rect key="frame" x="276" y="351" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7w6-mf-a6J"/>
+                                    <constraint firstAttribute="width" constant="48" id="x9t-AK-bKf"/>
+                                </constraints>
                                 <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BXg-2M-UMD"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlP-a5-KDU">
-                                <rect key="frame" x="336" y="351" width="91" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2W-yI-oZx">
+                                <rect key="frame" x="254" y="296" width="91" height="30"/>
                                 <state key="normal" title="Start Pouring"/>
+                                <connections>
+                                    <action selector="pourButtonAction:" destination="6Nh-UJ-G2F" eventType="touchUpInside" id="Nko-DB-QNX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZlP-a5-KDU" firstAttribute="centerY" secondItem="Kow-Ad-25t" secondAttribute="centerY" id="3SK-dD-g5m"/>
-                            <constraint firstItem="52g-3K-tKE" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="127" id="J53-ee-XY9"/>
-                            <constraint firstItem="ZlP-a5-KDU" firstAttribute="baseline" secondItem="Kow-Ad-25t" secondAttribute="baseline" id="LFy-Km-vJT"/>
-                            <constraint firstItem="Xs6-RB-ze0" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="237" id="LSX-ca-GNY"/>
-                            <constraint firstItem="ZlP-a5-KDU" firstAttribute="leading" secondItem="Kow-Ad-25t" secondAttribute="trailing" constant="95" id="O14-ms-g7g"/>
-                            <constraint firstItem="ZlP-a5-KDU" firstAttribute="leading" secondItem="Kow-Ad-25t" secondAttribute="trailing" constant="95" id="VDl-Pt-2lU"/>
-                            <constraint firstItem="Xob-vD-fqg" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="68" id="XOt-Iw-ivi"/>
-                            <constraint firstItem="Xs6-RB-ze0" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="c6X-L2-1Nb"/>
-                            <constraint firstItem="Kow-Ad-25t" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="331" id="npq-ZA-tTD"/>
-                            <constraint firstItem="Xs6-RB-ze0" firstAttribute="top" secondItem="52g-3K-tKE" secondAttribute="bottom" constant="89" id="qDg-n1-LVV"/>
-                            <constraint firstItem="Xob-vD-fqg" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="xaT-ze-8nM"/>
-                            <constraint firstItem="52g-3K-tKE" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="xb0-8u-3ko"/>
+                            <constraint firstItem="Kow-Ad-25t" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="331" id="5nB-cT-Ayh"/>
+                            <constraint firstItem="X2W-yI-oZx" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="276" id="QhW-Tr-Rjj"/>
+                            <constraint firstItem="Xob-vD-fqg" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="68" id="aKa-XO-9c5"/>
+                            <constraint firstItem="Xs6-RB-ze0" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="237" id="d2O-ck-0ak"/>
+                            <constraint firstItem="Kow-Ad-25t" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="j3q-2K-o3N"/>
+                            <constraint firstItem="Xob-vD-fqg" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" constant="2" id="kS2-Fa-gVp"/>
+                            <constraint firstItem="X2W-yI-oZx" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="nSo-8S-9xd"/>
+                            <constraint firstItem="Xs6-RB-ze0" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="r14-pF-7tJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="instructionsLabel" destination="Xob-vD-fqg" id="iTQ-ez-lz1"/>
+                        <outlet property="pourButtonOutlet" destination="X2W-yI-oZx" id="k0b-qC-Ahl"/>
+                        <outlet property="progress" destination="Xs6-RB-ze0" id="zbO-fE-i4m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMJ-79-Jo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="22"/>
+            <point key="canvasLocation" x="1038" y="-112"/>
         </scene>
     </scenes>
 </document>
