@@ -30,32 +30,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1) Measure out 20g of coffee" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yt-ek-hUN">
-                                <rect key="frame" x="190" y="170" width="221" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2) Grind the coffee to medium-fine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOF-KW-vnW">
-                                <rect key="frame" x="167" y="199" width="266" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4) Bring 320g of water to a boil" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPz-yz-aMa">
-                                <rect key="frame" x="181" y="257" width="238" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3) Place the filter in the v60, then pour the ground coffee in the cone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrM-Li-rbv">
-                                <rect key="frame" x="38" y="228" width="524" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5) Let the water cool off for 45-60 seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISG-Ka-tq7">
-                                <rect key="frame" x="135" y="286" width="331" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yt-ek-hUN">
+                                <rect key="frame" x="78" y="86" width="444" height="305"/>
+                                <string key="text">1) Measure out 20g of coffee  2) Grind the coffee to medium-fine  3) Place the v60 on your mug, place a filter in the v60, and place the coffee in the filter cone  4) Boil 300g of water  5) After the water boils, let it sit for 45-60 seconds</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,18 +41,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5ey-qs-YKM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="1cm-O6-1Jx"/>
-                            <constraint firstItem="xrM-Li-rbv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="208" id="6jF-P7-agG"/>
-                            <constraint firstItem="PPz-yz-aMa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="237" id="A6I-KR-bVn"/>
                             <constraint firstItem="Mm7-YJ-jPU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LkX-Wl-v9N"/>
-                            <constraint firstItem="KOF-KW-vnW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="179" id="QGx-YZ-iNC"/>
-                            <constraint firstItem="ISG-Ka-tq7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="266" id="T13-kt-mMg"/>
-                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T2I-h2-Asu"/>
-                            <constraint firstItem="xrM-Li-rbv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Uuf-wx-Jhi"/>
-                            <constraint firstItem="ISG-Ka-tq7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aLx-4v-i3B"/>
-                            <constraint firstItem="PPz-yz-aMa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bOt-wZ-DXy"/>
-                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="g3m-Bm-PWj"/>
+                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="gRG-RA-Ifj"/>
                             <constraint firstItem="Mm7-YJ-jPU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="328" id="jrM-Xh-TuA"/>
-                            <constraint firstItem="KOF-KW-vnW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lPR-Qv-lj8"/>
+                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXW-fc-H9e"/>
                             <constraint firstItem="5ey-qs-YKM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xDG-jr-S3a"/>
                         </constraints>
                     </view>
@@ -96,12 +65,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slowly pour just enough water to submerge the grounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xob-vD-fqg">
-                                <rect key="frame" x="88" y="88" width="428" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xs6-RB-ze0">
                                 <rect key="frame" x="225" y="257" width="150" height="2"/>
                                 <constraints>
@@ -126,15 +89,25 @@
                                     <action selector="pourButtonAction:" destination="6Nh-UJ-G2F" eventType="touchUpInside" id="Nko-DB-QNX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Slowly pour just enough water to submerge the grounds" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xob-vD-fqg">
+                                <rect key="frame" x="146" y="66" width="309" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="6RP-19-ZIA"/>
+                                    <constraint firstAttribute="height" constant="156" id="XHm-3F-sml"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Kow-Ad-25t" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="331" id="5nB-cT-Ayh"/>
                             <constraint firstItem="X2W-yI-oZx" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="276" id="QhW-Tr-Rjj"/>
-                            <constraint firstItem="Xob-vD-fqg" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="68" id="aKa-XO-9c5"/>
+                            <constraint firstItem="Xob-vD-fqg" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="46" id="bG1-zV-Pzo"/>
                             <constraint firstItem="Xs6-RB-ze0" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="237" id="d2O-ck-0ak"/>
+                            <constraint firstItem="Xob-vD-fqg" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="hqm-xG-Mvu"/>
                             <constraint firstItem="Kow-Ad-25t" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="j3q-2K-o3N"/>
-                            <constraint firstItem="Xob-vD-fqg" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" constant="2" id="kS2-Fa-gVp"/>
                             <constraint firstItem="X2W-yI-oZx" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="nSo-8S-9xd"/>
                             <constraint firstItem="Xs6-RB-ze0" firstAttribute="centerX" secondItem="bie-IF-D8K" secondAttribute="centerX" id="r14-pF-7tJ"/>
                         </constraints>
