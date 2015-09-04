@@ -16,22 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-YJ-jPU">
-                                <rect key="frame" x="270" y="348" width="62" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-YJ-jPU">
+                                <rect key="frame" x="269" y="392" width="62" height="30"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
-                                    <action selector="StartBrewButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itG-u7-y00"/>
-                                    <segue destination="6Nh-UJ-G2F" kind="show" id="KoF-Tj-eVB"/>
+                                    <segue destination="6Nh-UJ-G2F" kind="show" identifier="showTimer" animates="NO" id="KoF-Tj-eVB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions for v60 brewer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ey-qs-YKM">
-                                <rect key="frame" x="197" y="86" width="207" height="21"/>
+                                <rect key="frame" x="197" y="86" width="207" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yt-ek-hUN">
-                                <rect key="frame" x="78" y="86" width="444" height="305"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="7Yt-ek-hUN">
+                                <rect key="frame" x="121" y="139" width="359" height="224"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="224" id="Cri-D8-d5B"/>
+                                    <constraint firstAttribute="width" constant="359" id="Ja2-jK-0I5"/>
+                                </constraints>
                                 <string key="text">1) Measure out 20g of coffee  2) Grind the coffee to medium-fine  3) Place the v60 on your mug, place a filter in the v60, and place the coffee in the filter cone  4) Boil 300g of water  5) After the water boils, let it sit for 45-60 seconds</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -41,11 +44,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5ey-qs-YKM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="1cm-O6-1Jx"/>
+                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="119" id="3kX-IA-T1r"/>
                             <constraint firstItem="Mm7-YJ-jPU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LkX-Wl-v9N"/>
-                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="gRG-RA-Ifj"/>
-                            <constraint firstItem="Mm7-YJ-jPU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="328" id="jrM-Xh-TuA"/>
-                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nXW-fc-H9e"/>
+                            <constraint firstItem="Mm7-YJ-jPU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="372" id="jrM-Xh-TuA"/>
                             <constraint firstItem="5ey-qs-YKM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xDG-jr-S3a"/>
+                            <constraint firstItem="7Yt-ek-hUN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xf1-9z-M1j"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -116,7 +119,7 @@
                         <outlet property="instructionsLabel" destination="Xob-vD-fqg" id="iTQ-ez-lz1"/>
                         <outlet property="pourButtonOutlet" destination="X2W-yI-oZx" id="k0b-qC-Ahl"/>
                         <outlet property="progress" destination="Xs6-RB-ze0" id="zbO-fE-i4m"/>
-                        <segue destination="ifc-NJ-GML" kind="show" identifier="showResults" id="mzH-DK-PIQ"/>
+                        <segue destination="ifc-NJ-GML" kind="show" identifier="showResults" animates="NO" id="mzH-DK-PIQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMJ-79-Jo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,12 +137,119 @@
                     <view key="view" contentMode="scaleToFill" id="i6i-Qf-rhp">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a sip: how is it?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1F-l8-VX8">
+                                <rect key="frame" x="222" y="81" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBl-Nz-Bdt">
+                                <rect key="frame" x="273" y="197" width="55" height="30"/>
+                                <state key="normal" title="Perfect!"/>
+                                <connections>
+                                    <action selector="perfectButton:" destination="ifc-NJ-GML" eventType="touchUpInside" id="cAG-Uc-Spc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngG-Bu-V9c">
+                                <rect key="frame" x="261" y="307" width="78" height="30"/>
+                                <state key="normal" title="Too weak..."/>
+                                <connections>
+                                    <action selector="weakButton:" destination="ifc-NJ-GML" eventType="touchUpInside" id="Eki-Cx-Kf6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFR-ou-oRD">
+                                <rect key="frame" x="279" y="135" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0S-Ls-5KB">
+                                <rect key="frame" x="261" y="252" width="78" height="30"/>
+                                <state key="normal" title="Too bitter..."/>
+                                <connections>
+                                    <action selector="bitterButton:" destination="ifc-NJ-GML" eventType="touchUpInside" id="ju4-gP-LLm"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ngG-Bu-V9c" firstAttribute="centerX" secondItem="i6i-Qf-rhp" secondAttribute="centerX" id="Beg-nB-pNv"/>
+                            <constraint firstItem="U0S-Ls-5KB" firstAttribute="centerX" secondItem="i6i-Qf-rhp" secondAttribute="centerX" id="FlE-nw-Yfd"/>
+                            <constraint firstItem="X1F-l8-VX8" firstAttribute="centerX" secondItem="i6i-Qf-rhp" secondAttribute="centerX" id="HRQ-k5-vZT"/>
+                            <constraint firstItem="GBl-Nz-Bdt" firstAttribute="top" secondItem="Ajh-1c-Zz4" secondAttribute="bottom" constant="177" id="IhO-mj-CIG"/>
+                            <constraint firstItem="DFR-ou-oRD" firstAttribute="centerX" secondItem="i6i-Qf-rhp" secondAttribute="centerX" id="QXf-qG-Bpg"/>
+                            <constraint firstItem="U0S-Ls-5KB" firstAttribute="top" secondItem="Ajh-1c-Zz4" secondAttribute="bottom" constant="232" id="QaF-1v-GQg"/>
+                            <constraint firstItem="ngG-Bu-V9c" firstAttribute="top" secondItem="Ajh-1c-Zz4" secondAttribute="bottom" constant="287" id="TTv-9C-D6s"/>
+                            <constraint firstItem="X1F-l8-VX8" firstAttribute="top" secondItem="Ajh-1c-Zz4" secondAttribute="bottom" constant="61" id="fqG-gU-A3j"/>
+                            <constraint firstItem="GBl-Nz-Bdt" firstAttribute="centerX" secondItem="i6i-Qf-rhp" secondAttribute="centerX" id="wlV-yt-2qr"/>
+                            <constraint firstItem="DFR-ou-oRD" firstAttribute="top" secondItem="Ajh-1c-Zz4" secondAttribute="bottom" constant="115" id="z4r-Ly-uLX"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="devBrewTimeLabel" destination="DFR-ou-oRD" id="ODx-vB-upg"/>
+                        <segue destination="7Ve-Gs-mxC" kind="presentation" identifier="showPerfect" id="0Ar-L0-QiG"/>
+                        <segue destination="n9c-N1-Uvv" kind="presentation" identifier="showBitter" id="A1d-ti-7g0"/>
+                        <segue destination="nvU-cW-lCa" kind="presentation" identifier="showWeak" id="KcL-GT-TJT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48H-C3-nIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1813" y="5"/>
+        </scene>
+        <!--PerfectVC-->
+        <scene sceneID="3pl-sg-KNR">
+            <objects>
+                <viewController id="7Ve-Gs-mxC" customClass="PerfectVC" customModule="CoffeeDoc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o1w-gl-ujQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="TlC-vm-fdW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="flk-Dh-miY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SbZ-d0-OcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2537" y="-455"/>
+        </scene>
+        <!--Too BitterVC-->
+        <scene sceneID="kwD-OI-nFY">
+            <objects>
+                <viewController id="n9c-N1-Uvv" customClass="TooBitterVC" customModule="CoffeeDoc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ah4-1B-Oog"/>
+                        <viewControllerLayoutGuide type="bottom" id="egM-fT-C8K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y6g-lk-5ND">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tM1-9m-NpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3115" y="204"/>
+        </scene>
+        <!--Too WeakVC-->
+        <scene sceneID="HSn-0X-TOX">
+            <objects>
+                <viewController id="nvU-cW-lCa" customClass="TooWeakVC" customModule="CoffeeDoc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zsi-uT-jn8"/>
+                        <viewControllerLayoutGuide type="bottom" id="aeS-wt-uVP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HxE-wY-Pc3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzo-8Z-YBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2531" y="537"/>
         </scene>
     </scenes>
 </document>
