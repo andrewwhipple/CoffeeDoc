@@ -24,6 +24,7 @@ class SecondVC: UIViewController {
         if (!timerStarted) {
             timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "updateProgress", userInfo: nil, repeats: true)
             counter = 0
+            instructionsLabel.text = "Slowly pour just enough water to submerge the grounds, then wait."
             pourButtonOutlet.setTitle("Pouring Finished", forState: UIControlState.Normal)
             timerStarted = true
         } else {
@@ -47,7 +48,7 @@ class SecondVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         progress.progress = 0.0
-        instructionsLabel.text = "Slowly pour just enough water to submerge the grounds"
+        instructionsLabel.text = "Get water ready pour, then hit \"Start Pouring\""
         
     }
     

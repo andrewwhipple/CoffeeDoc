@@ -12,18 +12,23 @@ class ResultsVC: UIViewController {
 
     var finalCount = 0.0
     
+    var notes = ""
+    
     @IBOutlet weak var devBrewTimeLabel: UILabel!
     
     @IBAction func perfectButton(sender: UIButton) {
+        notes = "Perfect"
         self.performSegueWithIdentifier("showPerfect", sender: nil)
     }
  
     @IBAction func bitterButton(sender: AnyObject) {
-        self.performSegueWithIdentifier("showBitter", sender: nil)
+        notes = "Bitter"
+        self.performSegueWithIdentifier("showPerfect", sender: nil)
     }
     
     @IBAction func weakButton(sender: UIButton) {
-        self.performSegueWithIdentifier("showWeak", sender: nil)
+        notes = "Weak"
+        self.performSegueWithIdentifier("showPerfect", sender: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +43,10 @@ class ResultsVC: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "showBitter") {
-            let destinationVC = segue.destinationViewController as! TooBitterVC
+        if (segue.identifier == "showPerfect") {
+            let destinationVC = segue.destinationViewController as! PerfectVC
             destinationVC.brewTime = finalCount
-        } else if (segue.identifier == "showWeak") {
-            let destinationVC = segue.destinationViewController as! TooWeakVC
-            destinationVC.brewTime = finalCount
+            destinationVC.brewNotes = notes
         }
     
     }

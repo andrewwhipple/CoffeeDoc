@@ -188,7 +188,9 @@
                     </view>
                     <connections>
                         <outlet property="devBrewTimeLabel" destination="DFR-ou-oRD" id="ODx-vB-upg"/>
-                        <segue destination="7Ve-Gs-mxC" kind="presentation" identifier="showPerfect" id="0Ar-L0-QiG"/>
+                        <segue destination="7Ve-Gs-mxC" kind="popoverPresentation" identifier="showPerfect" popoverAnchorView="GBl-Nz-Bdt" id="0Ar-L0-QiG">
+                            <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
+                        </segue>
                         <segue destination="n9c-N1-Uvv" kind="presentation" identifier="showBitter" id="A1d-ti-7g0"/>
                         <segue destination="nvU-cW-lCa" kind="presentation" identifier="showWeak" id="KcL-GT-TJT"/>
                     </connections>
@@ -208,12 +210,40 @@
                     <view key="view" contentMode="scaleToFill" id="flk-Dh-miY">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="17" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="y0k-Zt-XRZ">
+                                <rect key="frame" x="142" y="60" width="317" height="344"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="344" id="fCO-h2-01T"/>
+                                    <constraint firstAttribute="width" constant="317" id="xZO-Ae-Dps"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxh-2s-xVJ">
+                                <rect key="frame" x="264" y="466" width="72" height="30"/>
+                                <state key="normal" title="Try Again?"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="OIw-aI-K0E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y0k-Zt-XRZ" firstAttribute="centerX" secondItem="flk-Dh-miY" secondAttribute="centerX" id="1bT-tF-Xj5"/>
+                            <constraint firstItem="y0k-Zt-XRZ" firstAttribute="top" secondItem="o1w-gl-ujQ" secondAttribute="bottom" constant="40" id="aYu-w2-Prd"/>
+                            <constraint firstItem="TlC-vm-fdW" firstAttribute="top" secondItem="Jxh-2s-xVJ" secondAttribute="bottom" constant="104" id="hK1-eQ-dsF"/>
+                            <constraint firstItem="Jxh-2s-xVJ" firstAttribute="centerX" secondItem="flk-Dh-miY" secondAttribute="centerX" id="vgf-DI-jN9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="suggestionsLabel" destination="y0k-Zt-XRZ" id="FNT-El-aRr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbZ-d0-OcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2537" y="-455"/>
+            <point key="canvasLocation" x="2488" y="-595"/>
         </scene>
         <!--Too BitterVC-->
         <scene sceneID="kwD-OI-nFY">
@@ -252,4 +282,7 @@
             <point key="canvasLocation" x="2531" y="537"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="OIw-aI-K0E"/>
+    </inferredMetricsTieBreakers>
 </document>
