@@ -191,8 +191,6 @@
                         <segue destination="7Ve-Gs-mxC" kind="popoverPresentation" identifier="showPerfect" popoverAnchorView="GBl-Nz-Bdt" id="0Ar-L0-QiG">
                             <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
                         </segue>
-                        <segue destination="n9c-N1-Uvv" kind="presentation" identifier="showBitter" id="A1d-ti-7g0"/>
-                        <segue destination="nvU-cW-lCa" kind="presentation" identifier="showWeak" id="KcL-GT-TJT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="48H-C3-nIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -244,42 +242,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SbZ-d0-OcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2488" y="-595"/>
-        </scene>
-        <!--Too BitterVC-->
-        <scene sceneID="kwD-OI-nFY">
-            <objects>
-                <viewController id="n9c-N1-Uvv" customClass="TooBitterVC" customModule="CoffeeDoc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ah4-1B-Oog"/>
-                        <viewControllerLayoutGuide type="bottom" id="egM-fT-C8K"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="y6g-lk-5ND">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tM1-9m-NpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3115" y="204"/>
-        </scene>
-        <!--Too WeakVC-->
-        <scene sceneID="HSn-0X-TOX">
-            <objects>
-                <viewController id="nvU-cW-lCa" customClass="TooWeakVC" customModule="CoffeeDoc" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zsi-uT-jn8"/>
-                        <viewControllerLayoutGuide type="bottom" id="aeS-wt-uVP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HxE-wY-Pc3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hzo-8Z-YBI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2531" y="537"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
