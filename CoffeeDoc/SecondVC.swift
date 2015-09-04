@@ -29,7 +29,7 @@ class SecondVC: UIViewController {
         } else {
             timer.invalidate()
             timerStarted = false
-            
+            self.performSegueWithIdentifier("showResults", sender: nil)
         }
     }
    
@@ -55,6 +55,15 @@ class SecondVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+	
+	override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "showResults") {
+            let destinationVC = segue.destinationViewController as! ResultsVC
+            destinationVC.finalCount = counter
+        }
+        
+        
+	}
     
     
 }

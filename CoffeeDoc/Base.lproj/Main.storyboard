@@ -27,14 +27,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions for v60 brewer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ey-qs-YKM">
                                 <rect key="frame" x="197" y="86" width="207" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="wordWrap" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Yt-ek-hUN">
                                 <rect key="frame" x="78" y="86" width="444" height="305"/>
                                 <string key="text">1) Measure out 20g of coffee  2) Grind the coffee to medium-fine  3) Place the v60 on your mug, place a filter in the v60, and place the coffee in the filter cone  4) Boil 300g of water  5) After the water boils, let it sit for 45-60 seconds</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -96,7 +96,7 @@
                                     <constraint firstAttribute="height" constant="156" id="XHm-3F-sml"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -116,11 +116,30 @@
                         <outlet property="instructionsLabel" destination="Xob-vD-fqg" id="iTQ-ez-lz1"/>
                         <outlet property="pourButtonOutlet" destination="X2W-yI-oZx" id="k0b-qC-Ahl"/>
                         <outlet property="progress" destination="Xs6-RB-ze0" id="zbO-fE-i4m"/>
+                        <segue destination="ifc-NJ-GML" kind="show" identifier="showResults" id="mzH-DK-PIQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hMJ-79-Jo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="-112"/>
+            <point key="canvasLocation" x="1125" y="-68"/>
+        </scene>
+        <!--ResultsVC-->
+        <scene sceneID="MEi-aW-fXh">
+            <objects>
+                <viewController id="ifc-NJ-GML" customClass="ResultsVC" customModule="CoffeeDoc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ajh-1c-Zz4"/>
+                        <viewControllerLayoutGuide type="bottom" id="LKy-gT-alr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i6i-Qf-rhp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48H-C3-nIB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1813" y="5"/>
         </scene>
     </scenes>
 </document>
