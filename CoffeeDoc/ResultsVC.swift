@@ -33,7 +33,7 @@ class ResultsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        devBrewTimeLabel.text = "Brew Time: \(finalCount)"
+        devBrewTimeLabel.text = "Brew Time: \(Int(finalCount) / 60):\(Int(finalCount % 60))"
         
     }
     

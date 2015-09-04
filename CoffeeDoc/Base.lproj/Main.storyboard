@@ -17,15 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mm7-YJ-jPU">
-                                <rect key="frame" x="269" y="392" width="62" height="30"/>
-                                <state key="normal" title="Continue"/>
+                                <rect key="frame" x="238" y="392" width="123" height="47"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" red="0.4823529411764706" green="0.55686274509803924" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="6Nh-UJ-G2F" kind="show" identifier="showTimer" animates="NO" id="KoF-Tj-eVB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instructions for v60 brewer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ey-qs-YKM">
-                                <rect key="frame" x="197" y="86" width="207" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="157" y="86" width="287.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -41,7 +44,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.85098039215686272" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5ey-qs-YKM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="1cm-O6-1Jx"/>
                             <constraint firstItem="7Yt-ek-hUN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="119" id="3kX-IA-T1r"/>
@@ -70,24 +73,17 @@
                         <subviews>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Xs6-RB-ze0">
                                 <rect key="frame" x="225" y="257" width="150" height="2"/>
+                                <color key="tintColor" red="0.14901960784313725" green="0.11764705882352941" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="eey-Fo-YrW"/>
                                 </constraints>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kow-Ad-25t">
-                                <rect key="frame" x="276" y="351" width="48" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7w6-mf-a6J"/>
-                                    <constraint firstAttribute="width" constant="48" id="x9t-AK-bKf"/>
-                                </constraints>
-                                <state key="normal" title="Cancel"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="BXg-2M-UMD"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2W-yI-oZx">
-                                <rect key="frame" x="254" y="296" width="91" height="30"/>
-                                <state key="normal" title="Start Pouring"/>
+                                <rect key="frame" x="216" y="296" width="167" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Start Pouring">
+                                    <color key="titleColor" red="0.4823529411764706" green="0.55686274509803924" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="pourButtonAction:" destination="6Nh-UJ-G2F" eventType="touchUpInside" id="Nko-DB-QNX"/>
                                 </connections>
@@ -102,10 +98,24 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kow-Ad-25t">
+                                <rect key="frame" x="256" y="357" width="89" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7w6-mf-a6J"/>
+                                    <constraint firstAttribute="width" constant="89" id="x9t-AK-bKf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.4823529411764706" green="0.55686274509803924" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="BXg-2M-UMD"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.85098039215686272" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Kow-Ad-25t" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="331" id="5nB-cT-Ayh"/>
+                            <constraint firstItem="Kow-Ad-25t" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="337" id="5nB-cT-Ayh"/>
                             <constraint firstItem="X2W-yI-oZx" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="276" id="QhW-Tr-Rjj"/>
                             <constraint firstItem="Xob-vD-fqg" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="46" id="bG1-zV-Pzo"/>
                             <constraint firstItem="Xs6-RB-ze0" firstAttribute="top" secondItem="h5l-a2-O9n" secondAttribute="bottom" constant="237" id="d2O-ck-0ak"/>
@@ -139,40 +149,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take a sip: how is it?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1F-l8-VX8">
-                                <rect key="frame" x="222" y="81" width="156" height="21"/>
+                                <rect key="frame" x="222" y="81" width="156" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBl-Nz-Bdt">
-                                <rect key="frame" x="273" y="197" width="55" height="30"/>
-                                <state key="normal" title="Perfect!"/>
+                                <rect key="frame" x="259" y="197" width="83" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Perfect!">
+                                    <color key="titleColor" red="0.4823529411764706" green="0.55686274509803924" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="perfectButton:" destination="ifc-NJ-GML" eventType="touchUpInside" id="cAG-Uc-Spc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngG-Bu-V9c">
-                                <rect key="frame" x="261" y="307" width="78" height="30"/>
-                                <state key="normal" title="Too weak..."/>
+                                <rect key="frame" x="239.5" y="307" width="121" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Too weak...">
+                                    <color key="titleColor" red="0.4823529411764706" green="0.55686274509803924" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="weakButton:" destination="ifc-NJ-GML" eventType="touchUpInside" id="Eki-Cx-Kf6"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DFR-ou-oRD">
-                                <rect key="frame" x="279" y="135" width="42" height="21"/>
+                                <rect key="frame" x="279" y="135" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0S-Ls-5KB">
-                                <rect key="frame" x="261" y="252" width="78" height="30"/>
-                                <state key="normal" title="Too bitter..."/>
+                                <rect key="frame" x="240" y="252" width="120" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Too bitter...">
+                                    <color key="titleColor" red="0.4823529411764706" green="0.55686274509803924" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="bitterButton:" destination="ifc-NJ-GML" eventType="touchUpInside" id="ju4-gP-LLm"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.85098039215686272" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ngG-Bu-V9c" firstAttribute="centerX" secondItem="i6i-Qf-rhp" secondAttribute="centerX" id="Beg-nB-pNv"/>
                             <constraint firstItem="U0S-Ls-5KB" firstAttribute="centerX" secondItem="i6i-Qf-rhp" secondAttribute="centerX" id="FlE-nw-Yfd"/>
@@ -220,14 +239,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxh-2s-xVJ">
-                                <rect key="frame" x="264" y="466" width="72" height="30"/>
-                                <state key="normal" title="Try Again?"/>
+                                <rect key="frame" x="229" y="449" width="142" height="47"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                                <state key="normal" title="Try Again?">
+                                    <color key="titleColor" red="0.4823529411764706" green="0.55686274509803924" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" animates="NO" id="OIw-aI-K0E"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.90196079015731812" green="0.90196079015731812" blue="0.90196079015731812" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.54509803921568623" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="y0k-Zt-XRZ" firstAttribute="centerX" secondItem="flk-Dh-miY" secondAttribute="centerX" id="1bT-tF-Xj5"/>
                             <constraint firstItem="y0k-Zt-XRZ" firstAttribute="top" secondItem="o1w-gl-ujQ" secondAttribute="bottom" constant="40" id="aYu-w2-Prd"/>
